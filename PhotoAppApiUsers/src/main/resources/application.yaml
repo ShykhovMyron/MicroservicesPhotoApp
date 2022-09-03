@@ -1,0 +1,17 @@
+server:
+  port: 0
+
+spring:
+  application:
+    name: users-ws
+  devtools:
+    restart:
+      enabled: true  # to false if not need
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+      default-zone: http://localhost:8010/eureka
+
